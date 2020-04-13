@@ -1,0 +1,42 @@
+<div class="navigation-wrapper">
+    <div class="navigation-brand">
+        <a href="{{site.url}}" class="logo-brand"><img src="{{site.logo}}" alt="{{site.title}}"/></a>
+    </div>
+    <div class="navigation-main">
+        <ul id="navigation-menu" class="slimmenu">
+        {% for link in site.data.navigation %}
+            {% assign active = nil %}
+
+            {% for sublink in link.submenu %}
+                {% if page.url contains sublink.url %}
+                    {% assign active = 'active' %}
+                {% endif %}
+            {% endfor %}
+
+            {% if page.url contains link.url %}
+                {% assign active = 'active' %}
+            {% endif %}
+
+            <li class="{{ active }}{% if link.submenu %} themeix-dropdown has-children{% endif %}">
+                <a href="{{ link.url|prepend:site.baseurl }}">{{ link.text }}</a>
+
+                {% if link.submenu %}						
+                    <ul class="themeix-dropdown-item" role="menu">
+                        {% for sublink in link.submenu %}
+                            <li {% if page.url contains sublink.url %}class="active"{% endif %}>
+                                <a href="{{ sublink.url|prepend:site.baseurl }}">{{ sublink.text }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            </li>
+           {% endfor %}
+            <li>
+                <a href="#" class="search-popup-icon"><img src="{{site.url}}/assets/images/search-icon.png" alt="search icon" /></a>
+            </li>
+            <li>
+                <a href="#" class="cart-popup" id="cart-popup-open"><img src="{{site.url}}/assets/images/cart-icon.png" alt="search icon" /><span class="cart-label">4</span></a>
+            </li>
+        </ul>
+    </div>
+</div>

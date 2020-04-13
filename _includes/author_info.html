@@ -1,0 +1,12 @@
+<div class="single-admin">
+  {% for authors in site.data.authors | where: "name": "Themeix" %}
+   {% if authors.name contains page.author_name %}
+    <div class="admin-avatar" style="background-image:url(assets/images/admin-avatar.png)"></div>
+    <div class="admin-comment">
+        <p>{{authors.bio}}</p>
+        <h4 class="heading-h4"><a href="/pages/authors/{{authors.name | url_encode | replace:'+','_' | downcase }}">{{authors.name}}</a></h4>
+        <h6 class="heading-h6">{{authors.designation}}</h6>
+    </div>
+   {% endif %}
+  {% endfor %}
+</div>

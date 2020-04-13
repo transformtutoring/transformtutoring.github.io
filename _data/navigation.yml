@@ -1,0 +1,26 @@
+#Please use the main menu items under the "text"
+
+- text: Home
+  url: /
+- text: Academic Tutoring
+  url: /
+- text: Test Prep
+  url: /
+  submenu:
+  - text: AP Tests
+    url: /
+  - text: SAT Subject Tests
+    url: /
+  - text: SAT/ACT 
+    url: /
+- text: Classes
+  url: /
+  submenu:
+  - text: Summer Classes
+    url: /
+  - text: Mini Workshops
+    url: /
+- text: College Counseling
+  url: /
+- text: Contact
+  url: /pages/contact

@@ -1,0 +1,26 @@
+---
+layout: page
+title: Blog Grid
+pagination:
+  enabled: true
+permalink: "pages/blog-grid/"
+---
+
+<div class="blog-area section-spacing  bg-color1">
+ <div class="blog-wrapper">
+    <div class="container">
+    <div class="row">
+        {% for posts in paginator.posts %}
+        <div class="col-md-6 col-lg-4">
+            {% include blog_posts.html %}
+        </div> 
+        {% endfor %}
+        </div>
+        <div class="row">
+          <div class="col">
+              {% include pagination.html %}
+          </div>
+        </div>
+    </div>
+ </div>
+</div>

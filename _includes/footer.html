@@ -1,0 +1,118 @@
+<div class="footer-contact bg-color3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="footer-contact-intro">
+                <div class="footer-contact-icon">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                </div>
+                <p>
+                    Address <br /> <span>3208 Jim Rosa Lane <br />San Jose, CA 95134</span>
+                </p>
+                </div>
+            </div>
+            <div class="col-md-4 bg-color1">
+                <div class="footer-contact-intro">
+                <div class="footer-contact-icon">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>				   
+                </div>
+                <p>
+                    Email <br /><span><a href="mailto:themeix@gmail.com">support@themeix.com</a><br /><a href="mailto:themeix@gmail.com">themeix@gmail.com</a></span>
+                </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="footer-contact-intro">
+                <div class="footer-contact-icon">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>				 
+                </div>
+                <p>
+                    Open Hours <br /><span>Mon-Sat: 9am - 6pm <br /> Sun: Closed</span>
+                </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+<!--End Hosting Solution Area -->
+<footer class="footer-area bg-color1">
+    <div class="container ">
+        <div class="footer-wrapper">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="footer-widget footer-about">
+                        <a href="{{site.url}}" class="footer-logo wow"><img src="{{site.url}}/assets/images/footer-logo.png" alt="{{site.title}}"/></a>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                        <ul class="footer-contact-us list-inline">
+                            <li><img src="{{site.baseurl}}/assets/images/f-contact-icon1.png" alt="contact icon" />22/121 Apple Street, New York NY 10012, USA
+                            </li>
+                            <li><img src="{{site.baseurl}}/assets/images/f-contact-icon2.png" alt="contact icon" /> Phone: +123-456-7890
+                            </li>
+                        </ul>
+                        <ul class="footer-share-link list-inline">
+                            <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-2">
+                    <div class="footer-widget">
+                        <h4 class="footer-title heading-4">Get Support</h4>
+                        <ul class="footer-category list-inline">
+                            <li><a href="#">Contact Us </a></li>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">Forum</a></li>
+                            <li><a href="#">Submit Titcket</a></li>
+                            <li><a href="#">Live Chat</a></li>
+                            <li><a href="#">Phone Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-2">
+                    <div class="footer-widget">
+                      <h4 class="footer-title heading-4">Tag Clouds</h4>
+                        <div class="tag-cloud-wrapper">
+                            {{ site | tag_cloud }}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="footer-widget">
+                        <h4 class="footer-title heading-4">latest news</h4>
+                        <div class="footer-latest">
+                            {% for posts in site.posts limit:"3" %}
+                            <div class="footer-latest-item">
+                                <div class="footer-latest-img">
+                                    <a href="{{posts.url}}"><img src="{{posts.post_image}}" alt="{{posts.title}}"/></a>
+                                </div>
+                                <div class="footer-latest-content">
+                                    <p><a href="{{posts.url}}">{{posts.title}}</a></p>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="footer-copyright-text">
+                        <p>© Copyright - {{date | date:"%y"}} {{site.title}} - Designed by <a href="https://themeix.com"> Themeix</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <ul class="footer-copyright-menu list-inline">
+                        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a href="#">About Us</a></li>
+                        <li class="list-inline-item"><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer Area -->

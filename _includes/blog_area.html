@@ -1,0 +1,19 @@
+<!--Start Blog Area -->
+<section class="blog-area section-spacing sec_minus-30 bg-color1">
+   <div class="blog-wrapper">
+      <div class="container">
+         <div class="section-title">
+            <h2 class="headeing-2"> <span class="section-style">Latest </span>Blog Post<span class="section-label">L</span></h2>
+            <p>Share processes and data securely on a need to know basis without the need for  reconciliation it combines a permissione. Every website starts  </p>
+         </div>
+         <div class="row">
+           {% for posts in site.posts limit:"3" %}
+            <div class="col-md-6 col-lg-4">
+              {% include blog_posts.html %}
+            </div>
+          {% endfor %}
+         </div>
+      </div>
+   </div>
+</section>
+<!--End Blog Area -->
