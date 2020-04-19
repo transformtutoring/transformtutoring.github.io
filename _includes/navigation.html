@@ -1,6 +1,8 @@
 <div class="navigation-wrapper">
     <div class="navigation-brand">
-        <a href="{{site.url}}" class="logo-brand"><img src="{{site.logo}}" alt="{{site.title}}"/></a>
+        <!-- Original site was an image logo link
+            <a href="{{site.url}}" class="logo-brand"><img src="{{site.logo}}" alt="{{site.title}}"/></a>-->
+        <b><h5 style="font-weight:bold"><a style="color:white;" href="{{site.url}}" class="logo-brand"> {{site.title}}</a></h5></b>
     </div>
     <div class="navigation-main">
         <ul id="navigation-menu" class="slimmenu">
@@ -30,13 +32,17 @@
                     </ul>
                 {% endif %}
             </li>
+
            {% endfor %}
+            
+<!--
             <li>
                 <a href="#" class="search-popup-icon"><img src="{{site.url}}/assets/images/search-icon.png" alt="search icon" /></a>
             </li>
             <li>
                 <a href="#" class="cart-popup" id="cart-popup-open"><img src="{{site.url}}/assets/images/cart-icon.png" alt="search icon" /><span class="cart-label">4</span></a>
             </li>
+        -->
         </ul>
     </div>
 </div>

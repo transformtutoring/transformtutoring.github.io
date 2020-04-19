@@ -1,5 +1,8 @@
+<!--
 <div class="footer-contact bg-color3">
+    
     <div class="container">
+        
         <div class="row">
             <div class="col-md-4">
                 <div class="footer-contact-intro">
@@ -12,6 +15,7 @@
                 </div>
             </div>
             <div class="col-md-4 bg-color1">
+
                 <div class="footer-contact-intro">
                 <div class="footer-contact-icon">
                     <i class="fa fa-envelope-o" aria-hidden="true"></i>				   
@@ -32,14 +36,38 @@
                 </div>
             </div>
         </div>
+    
     </div>
-    </div>
+</div>
+-->
 <!--End Hosting Solution Area -->
 <footer class="footer-area bg-color1">
     <div class="container ">
         <div class="footer-wrapper">
             <div class="row">
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4">              
+                    <div class="footer-widget">
+                        <!-- LOCATIONS -->
+                        <h4 class="footer-title heading-4">Locations</h4>
+                        <ul class="footer-category list-inline">
+                            <li><a href="/atherton-tutoring">Atherton Tutoring</a></li>
+                            <li><a href="/burlingame-tutoring">Burlingame Tutoring</a></li>
+                            <li><a href="/cupertino-tutoring">Cupertino Tutoring</a></li>
+                            <li><a href="/los-altos-tutoring">Los Altos Tutoring</a></li>
+                            <li><a href="/menlo-park-tutoring">Menlo Park Tutoring</a></li>
+                            <li><a href="/mountain-view-tutoring">Mountain View Tutoring</a></li>
+                            <li><a href="/palo-alto-tutoring">Palo Alto Tutoring</a></li>
+                            <li><a href="/redwood-city-tutoring">Redwood City Tutoring</a></li>
+                            <li><a href="/saratoga-tutoring">Saratoga Tutoring</a></li>
+                            <li><a href="/san-jose-tutoring">San Jose Tutoring</a></li>
+                            <li><a href="/san-mateo-tutoring">San Mateo Tutoring</a></li>
+                            <li><a href="/sunnyvale-tutoring">Sunnyvale Tutoring</a></li>
+                            <li><a href="/woodside-tutoring">Woodside Tutoring</a></li>                                                      
+                        </ul>
+                    </div>
+
+
+                <!--
                     <div class="footer-widget footer-about">
                         <a href="{{site.url}}" class="footer-logo wow"><img src="{{site.url}}/assets/images/footer-logo.png" alt="{{site.title}}"/></a>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
@@ -55,32 +83,38 @@
                             <li class="list-inline-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
                         </ul>
                     </div>
+                -->
                 </div>
                 
                 <div class="col-md-6 col-lg-2">
                     <div class="footer-widget">
-                        <h4 class="footer-title heading-4">Get Support</h4>
+                        <h4 class="footer-title heading-4">Services</h4>
                         <ul class="footer-category list-inline">
-                            <li><a href="#">Contact Us </a></li>
-                            <li><a href="#">Community</a></li>
-                            <li><a href="#">Forum</a></li>
-                            <li><a href="#">Submit Titcket</a></li>
-                            <li><a href="#">Live Chat</a></li>
-                            <li><a href="#">Phone Support</a></li>
+                            <li><a href="#">Academic Tutoring</a></li>
+                            <li><a href="#">SAT/ACT Test Prep</a></li>
+                            <li><a href="#">AP Test Prep</a></li>
+                            <li><a href="#">SAT Subject Test Prep</a></li>
+                            <li><a href="#">Mini Classes</a></li>
+                            <li><a href="#">Summer Classes</a></li>
+                            <li><a href="#">College Counseling</a></li>
+                            
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-2">
+                    <!-- EXTRA Removed tag clouds feature
                     <div class="footer-widget">
                       <h4 class="footer-title heading-4">Tag Clouds</h4>
                         <div class="tag-cloud-wrapper">
                             {{ site | tag_cloud }}
                         </div>
                     </div>
+                    -->
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="footer-widget">
-                        <h4 class="footer-title heading-4">latest news</h4>
+                        <h4 class="footer-title heading-4">Teaching Formats</h4>
+                        <!-- EXTRA removed the Latest News
                         <div class="footer-latest">
                             {% for posts in site.posts limit:"3" %}
                             <div class="footer-latest-item">
@@ -93,6 +127,30 @@
                             </div>
                             {% endfor %}
                         </div>
+                        -->
+                        <ul class="footer-category list-inline">
+                            <li><a href="#">1-on-1 Tutoring</a></li>
+                                <ul>
+                                    <li>In Home</li>
+                                    <li>At a branch/library</li>
+                                    <li>Virtual</li>
+                                    <li></li>
+                                </ul>
+                                
+                            <li><a href="#">Group Tutoring (1-On-2)</a></li>
+                                <ul>
+                                    <li>At a branch/library</li>
+                                    <li>Virtual</li>
+                                    <li></li>
+                                </ul>
+                            
+                            <li><a href="#">Group Classes (1-On-4)</a></li>
+                                <ul>
+                                    <li>At a branch/library</li>
+                                    <li>Virtual</li>
+                                </ul>                                                           
+                        </ul>
+
                     </div>
                 </div>
             </div>
@@ -101,14 +159,14 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="footer-copyright-text">
-                        <p>© Copyright - {{date | date:"%y"}} {{site.title}} - Designed by <a href="https://themeix.com"> Themeix</a></p>
+                        <p>© Copyright - {{date | date:"%y"}} {{site.title}}</p>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <ul class="footer-copyright-menu list-inline">
                         <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
                         <li class="list-inline-item"><a href="#">About Us</a></li>
-                        <li class="list-inline-item"><a href="#">Contact Us</a></li>
+                        <li class="list-inline-item"><a href="/pages/contact">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
