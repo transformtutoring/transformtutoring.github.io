@@ -5,7 +5,7 @@ date: 2020-04-13 20:37:13 +0600
 tags: location
 categories: [location]
 author_name: "Transform Tutoring"
-post_image: "/assets/images/location.jpg"
+post_image: "/assets/images/location.svg"
 permalink: "/burlingame-tutoring"
 ---
 
