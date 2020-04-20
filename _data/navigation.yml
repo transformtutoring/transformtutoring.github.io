@@ -3,24 +3,24 @@
 - text: Home
   url: /
 - text: Academic Tutoring
-  url: /
+  url: /academictutoring
 - text: Test Prep
-  url: /
+  url: /testprep
   submenu:
   - text: AP Tests
-    url: /
+    url: /aptests
   - text: SAT Subject Tests
-    url: /
+    url: /satsubjecttests
   - text: SAT/ACT 
-    url: /
+    url: /satact
 - text: Classes
-  url: /
+  url: /classes
   submenu:
   - text: Summer Classes
-    url: /
+    url: /summerclasses
   - text: Mini Workshops
-    url: /
+    url: /miniworkshops
 - text: College Counseling
-  url: /
+  url: /collegecounseling
 - text: Contact
   url: /contact
