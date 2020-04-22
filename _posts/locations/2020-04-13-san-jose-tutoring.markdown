@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "San Jose Tutoring"
+title: "San Jose"
 date: 2020-04-13 20:37:13 +0600
 tags: location
 categories: [location]
 author_name: "Transform Tutoring"
 post_image: "/assets/images/location.svg"
-permalink: "/san-jose-tutoring"
+permalink: "/san-jose"
 ---
 
 
