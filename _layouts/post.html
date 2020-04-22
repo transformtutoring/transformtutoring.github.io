@@ -16,12 +16,15 @@ layout: default
                <div class="single-content">
                   {{page.content}}				
                </div>
+               
                <div class="single-tags-share">
+                  
                   <div class="single-tags list-inline float-left">
                      <div class="list-inline-item">Tags:</div>
-                     {{page | tags }}
+                     {{page.tags }}
                   </div>
                   {% include social_share.html %}
+               
                </div>
                  {% include author_info.html %}
                  {% include pagination.html %}
