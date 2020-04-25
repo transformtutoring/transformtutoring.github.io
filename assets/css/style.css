@@ -59,10 +59,11 @@ position: absolute;
 }
 
 body {
-	font-family: 'Poppins', sans-serif;
+	/* Changing the font from Poppins to Georgia */
+	font-family: 'Georgia';
 	font-weight: 300;
 	line-height: 1.5;
-	font-size: 16px;
+	font-size: 18px;
 	-webkit-font-smoothing: antialiased;
 	-moz-font-smoothing: antialiased;
 	color: #8d8992;
@@ -85,12 +86,12 @@ body {
 
 ::-webkit-input-placeholder {
 	color: #dcdcdc;
-	font-size: 16px;
+	font-size: 18px;
 }
 
 :-moz-placeholder {
 	color: #dcdcdc;
-	font-size: 16px;
+	font-size: 18px;
 }
 
 a,
@@ -342,7 +343,7 @@ h7 {
 
 .lds-roller div:nth-child(7):after {
 	top: 50px;
-	left: 14px;
+	left: 16px;
 }
 
 .lds-roller div:nth-child(8) {
@@ -658,7 +659,7 @@ ul.slimmenu li a {
 .searchBoxTop button[type="submit"] {
 	/* NK previous #8066dc */
 	border: 1px solid #8C1515;
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 1.4;
 	color: #fff;
 	/* NK previous #8066dc */
@@ -3276,7 +3277,7 @@ ul.slimmenu li a {
 .blog-post .calender-month {
 	/* NK previous #8066dc */
 	background-color: #8C1515;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 1.4;
 	color: #ffffff;
 	font-weight: 500;

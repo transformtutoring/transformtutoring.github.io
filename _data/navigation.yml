@@ -17,9 +17,9 @@
   url: /classes
   submenu:
   - text: Summer Classes
-    url: /summerclasses
+    url: /classes
   - text: Mini Workshops
-    url: /miniworkshops
+    url: /classes
 - text: College Counseling
   url: /collegecounseling
 - text: Contact
