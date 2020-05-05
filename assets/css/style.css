@@ -48,6 +48,16 @@ position: absolute;
    margin-left: -250px; /* Half the width */
 }
 
+.tg  {border-collapse:collapse;border-color:#ccc;border-spacing:0;}
+.tg td{background-color:#fff;border-color:#ccc;border-style:solid;border-width:1px;color:#333;
+  font-family:Georgia; font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{background-color:#f0f0f0;border-color:#ccc;border-style:solid;border-width:1px;color:#333;
+  font-family:Georgia; font-size:14px;font-weight:bold;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-e904{font-family:Georgia, serif !important;;font-size:18px;text-align:left;vertical-align:top}
+.tg .tg-edem{font-family:Georgia, serif !important;;font-size:18px;font-weight:bold;position:-webkit-sticky;position:sticky;
+  text-align:left;top:-1px;vertical-align:top;will-change:transform}
+.tg .tg-rv0r{background-color:#f9f9f9;font-family:Georgia, serif !important;;font-size:18px;text-align:left;vertical-align:top}
+
 /* ==============================================
 1. Default Css
 ============================================== */
@@ -56,8 +66,8 @@ position: absolute;
 	-webkit-transition: 0.5s all;
 	-o-transition: 0.5s all;
 	transition: 0.5s all;
-}
 
+}
 body {
 	/* Changing the font from Poppins to Georgia */
 	font-family: 'Georgia';
