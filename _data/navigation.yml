@@ -2,7 +2,7 @@
 
 - text: Home
   url: /
-- text: Academic Tutoring
+- text: Tutoring
   url: /academictutoring
 - text: Test Prep
   url: /testprep
@@ -13,13 +13,8 @@
     url: /satsubjecttests
   - text: SAT/ACT 
     url: /satact
-- text: Classes
+- text: Summer Classes
   url: /classes
-  submenu:
-  - text: Summer Classes
-    url: /classes
-  - text: Mini Workshops
-    url: /classes
 - text: College Readiness
   url: /collegereadiness
 - text: Contact
