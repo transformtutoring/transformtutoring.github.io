@@ -2,7 +2,7 @@
 layout: post
 title: "Teaching Formats"
 date: 2020-04-19 20:37:13 +0600
-tags: Test Prep
+tags: 
 categories: []
 author_name: "Transform Tutoring"
 post_image: "/assets/images/book.svg"
