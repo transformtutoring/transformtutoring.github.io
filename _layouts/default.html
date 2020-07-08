@@ -2,6 +2,16 @@
 <html lang="zxx">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-149833794-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149833794-1');
+</script>
+
     <!-- meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -57,18 +67,7 @@
 
 <body>
     <!-- Loading -->
-    <!-- <div class="loader-wrapper">
-        <div class="lds-roller">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div> -->
+
     {% include header.html %}
      {{content}}
     {% include footer.html %}
@@ -86,4 +85,5 @@
     <script id="dsq-count-scr" src="//axiohost-netlify-com.disqus.com/count.js" async></script>
     <script src="{{site.baseurl}}/assets/js/simple-jekyll-search.min.js"></script>
     <script src="{{site.baseurl}}/assets/js/custom.js"></script>
+</body>
 </html>

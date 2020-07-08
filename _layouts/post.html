@@ -8,37 +8,38 @@ layout: default
 <div class="blog-wrapper">
    <div class="container">
       <div class="row">
-         <div class="col-md-7 col-lg-8">
+         <div class="col-md-11 col-lg-12">
             <div class="single-post">
                <div class="single-img">
                   <img src="{{page.post_image}}" alt="{{page.title}}" style="max-width:300px"/>
                </div>
                <div class="single-content">
-                  {{page.content}}				
+                  {{page.content}}           
                </div>
-               
+               <div><br></br></div>
                <div class="single-tags-share">
                   
                   <div class="single-tags list-inline float-left">
+                     
+                     <!-- NK Removed Tags section
                      <div class="list-inline-item">Tags:</div>
                      {{page.tags }}
+                     -->
                   </div>
                   {% include social_share.html %}
                
+               <!-- NK Removed
                </div>
                  {% include author_info.html %}
                  {% include pagination.html %}
-
-               <!-- NK Removed comments section
+               
                <div class="comments-wrapper">
                   {% include disqus_comments.html %}
                </div>
-               -->
+               
 
             </div>
-         </div>
-         <div class="col-md-5 col-lg-4">
-         {% include sidebar.html %}
+            -->
          </div>
       </div>
    </div>
